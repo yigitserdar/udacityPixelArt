@@ -1,29 +1,45 @@
+html { /* ff3.6+ */ /* safari4+,chrome */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
+background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 50%, rgba(255,0,0,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#FF0000',GradientType=1 ); /* ie6-9 */
+background-repeat:no-repeat;
+width: 100%;
+height: 170%;
+}
+
 body {
     text-align: center;
-    font-family: 'Inconsolata', monospace;
+    color: antiquewhite;
+}
+
+.container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 5;
 }
 
 h1 {
-    font-family: 'VT323', cursive;
-    font-size: 90px;
+    font-family: Monoton;
+    font-size: 70px;
     margin: 0.2em;
-    background-color: #e6e600;
-    border: 5px solid black;
-    border-radius: 25px 
 }
 
 h2 {
-    margin: 1em 0 0.25em;      
+    font-size: 1.5em;
+    margin: 1em 0 0.25em;
 }
 
 h2:first-of-type {
+    font-size: 2.5em;
     margin-top: 0.5em;
 }
 
-
-
-table, tr, td {
-    border: 1px solid #ad8f8f;
+table,
+tr,
+td {
+    border: 1px solid black;
 }
 
 table {
@@ -32,64 +48,40 @@ table {
 }
 
 tr {
-    height: 40px;
+    height: 20px;
 }
 
 td {
-    width: 40px;
+    width: 20px;
 }
 
 input[type=number] {
     width: 6em;
-    height:2em;
-    border-radius: 5px;
-    outline:none;
-    border: 2px solid #e6e600;
-    margin-left:10px;
-    margin-right:10px;
+    outline: none;
 }
 
 input[type=number]:focus {
+	border: 3px solid rgba(255,0,0,1);
+	background-color: antiquewhite;
+	outline: none;
+}
+
+#submit,
+#submit-random {
+    background: none;
     outline: none;
-    border-color: #9ecaed;
-    -webkit-box-shadow: 0 0 10px #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
+    border-radius: 8px;
 }
 
-input[type=submit] {
-    width: 8em;
-    height: 2em;
-    border-radius:20px;
-    background-color: #e6e600;
-    border-color: #000000;
-    margin: 3px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    outline:none;
-    margin-left:10px;
+#submit:hover,
+#submit-random:hover {
+    border: 2px solid rgba(255,0,0,1);
+    background-color: antiquewhite;
+    color: rgba(255,0,0,1);
 }
 
-input[type=color] {
-    width: 8em;
-    height: 2em;
-    border-radius: 20px;
-    padding:2px;
-    outline:none;
-    background-color: #f0eaea;
-    border-color: black;
-    
-}
-
-#sizePicker {
-    margin-top: 5%;
-}
-
-#colorPicker,
 #pixel_canvas {
-    margin-top: 2%;
-}
-
-span {
-    font-size: 20px;
+    margin-bottom: 10px;
 }

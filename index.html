@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Pixel Art Maker!</title>
-  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <h1>Pixel Art Maker</h1>
+   <div class="container">
+    <h1>Lab: Pixel Art Maker</h1>
 
-  <h2>Choose Grid Size</h2>
-  <form id="sizePicker">
-    <label>Grid Height:
-      <input type="number" id="input_height" name="height" min="1" value="1" min="1" max="48" required>
-    </label>
-    <label>Grid Width:
-      <input type="number" id="input_width" name="width" min="1" value="1" min="1" max="48" required>
-    </label>
-    <input type="submit">
-  </form>
+    <h2>Choose Grid Size</h2>
+     <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" max="50" value="10">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" max="50" value="10">
+        <input type="submit" id="submit">
+    </form>
+    <h2>I am feeling lucky</h2>
+    <input type="submit" id="submit-random" value="Random">
 
-  <h2>Pick A Color</h2>
-  <input type="color" id="colorPicker">
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
 
-  <h2>Design Canvas</h2>
-  <table id="pixel_canvas"></table>
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table>
+    </div>
 
-  <script src="designs.js"></script>
+    <script src="designs.js"></script>
 </body>
-
 </html>
