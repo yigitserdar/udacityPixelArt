@@ -1,14 +1,20 @@
-html { /* ff3.6+ */ /* safari4+,chrome */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
-background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 50%, rgba(255,0,0,1) 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#FF0000',GradientType=1 ); /* ie6-9 */
-background-repeat:no-repeat;
-width: 100%;
-height: 170%;
+html {
+  /* ff3.6+ */ /* safari4+,chrome */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(128, 0, 0, 1) 50%,
+    rgba(255, 0, 0, 1) 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#FF0000',GradientType=1 ); /* ie6-9 */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 170%;
 }
 
 body {
-    text-align: center;
-    color: antiquewhite;
+  text-align: center;
+  color: antiquewhite;
 }
 
 .container {
@@ -21,67 +27,67 @@ body {
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin: 1em 0 0.25em;
+  font-size: 1.5em;
+  margin: 1em 0 0.25em;
 }
 
 h2:first-of-type {
-    font-size: 2.5em;
-    margin-top: 0.5em;
+  font-size: 2.5em;
+  margin-top: 0.5em;
 }
 
 table,
 tr,
 td {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
 tr {
-    height: 20px;
+  height: 20px;
 }
 
 td {
-    width: 20px;
+  width: 20px;
 }
 
-input[type=number] {
-    width: 6em;
-    outline: none;
+input[type="number"] {
+  width: 6em;
+  outline: none;
 }
 
-input[type=number]:focus {
-	border: 3px solid rgba(255,0,0,1);
-	background-color: antiquewhite;
-	outline: none;
+input[type="number"]:focus {
+  border: 3px solid rgba(255, 0, 0, 1);
+  background-color: antiquewhite;
+  outline: none;
 }
 
 #submit,
 #submit-random {
-    background: none;
-    outline: none;
-    border: 2px solid antiquewhite;
-    color: antiquewhite;
-    border-radius: 8px;
+  background: none;
+  outline: none;
+  border: 2px solid antiquewhite;
+  color: antiquewhite;
+  border-radius: 8px;
 }
 
 #submit:hover,
 #submit-random:hover {
-    border: 2px solid rgba(255,0,0,1);
-    background-color: antiquewhite;
-    color: rgba(255,0,0,1);
+  border: 2px solid rgba(255, 0, 0, 1);
+  background-color: antiquewhite;
+  color: rgba(255, 0, 0, 1);
 }
 
 #pixel_canvas {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
